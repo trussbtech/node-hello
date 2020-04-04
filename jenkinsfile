@@ -7,7 +7,7 @@ pipeline {
         
     stage('Git') {
       steps {
-        git 'https://github.com/johnpapa/node-hello.git'
+        git 'https://github.com/trussbtech/node-hello.git'
       }
     }
      
@@ -18,7 +18,6 @@ pipeline {
       }
     }  
     
-            
     stage('Test') {
       steps {
         sh 'node test'
